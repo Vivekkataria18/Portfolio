@@ -1,0 +1,176 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Adding transition for smooth hover effect */
+}
+
+/* Body styles */
+body {
+    overflow-x: hidden;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: auto;
+    margin: 0px 10px;
+    padding: 0px 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: left;
+}
+
+.header-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 300;
+    animation-duration: 2s;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Domain buttons styles */
+#domains {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.domain-buttons {
+    margin-top: 20px;
+}
+
+.domain-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff86c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.domain-btn:hover {
+    background-color: #4248ff;
+}
+
+/* Projects section styles */
+#projects {
+    margin-top: 50px;
+}
+
+.project {
+    margin-top: 50px;
+    display: none; /* Hide projects by default */
+}
+
+.project.active {
+    display: block; /* Show projects when active */
+}
+
+.project h2 {
+    color: #fff;
+}
+
+.project-details {
+    margin-bottom: 20px;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-image a {
+    margin: 0 10px;
+}
+
+.project-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff86c3, #4248ff);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact section styles */
+#contact {
+    margin-top: 50px;
+}
+
+.contact-details {
+    color: #fff;
+}
+
+/* Footer styles */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
